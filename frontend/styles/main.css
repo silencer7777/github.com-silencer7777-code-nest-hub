@@ -11,7 +11,6 @@ body {
     background: var(--background);
 }
 
-/* Header Styles */
 .glassmorphic-header {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
@@ -19,27 +18,47 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Container */
 .container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
+/* Runtime Indicators */
+.runtime-indicator {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.runtime-indicator span {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.runtime-python { background: #3572A5; color: white; }
+.runtime-go { background: #00ADD8; color: white; }
+.runtime-ruby { background: #CC342D; color: white; }
+
+/* Service Status Indicators */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    background: #e74c3c;
+}
+
+.status-indicator.active { background: #2ecc71; }
+
 /* Home Section */
-#home {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-}
-
 .hero-section {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem 0;
 }
 
-.features-grid {
+.feature-grid {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -50,74 +69,4 @@ body {
     padding: 1.5rem;
     background: rgba(241, 243, 246, 0.9);
     border-radius: 8px;
-    backdrop-filter: blur(4px);
-}
-
-.feature-card h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.feature-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.feature-card li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.feature-card li:last-child {
-    border: none;
-}
-
-/* Console Section */
-#console-output {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-}
-
-/* Dark Theme Styles */
-.dark-theme {
-    --background: #1a1a1a;
-    --primary: #3498db;
-    color: #f5f6fa;
-}
-
-.dark-theme .glassmorphic-header {
-    background: rgba(32, 32, 32, 0.85);
-    color: #f5f6fa;
-}
-
-.dark-theme #home {
-    background: rgba(32, 32, 32, 0.9);
-    color: #f5f6fa;
-}
-
-.dark-theme .feature-card {
-    background: rgba(32, 32, 32, 0.9);
-    color: #f5f6fa;
-}
-
-.dark-theme .feature-card li {
-    border-color: rgba(255,255,255,0.1);
-}
-
-.dark-theme #console-output {
-    background: rgba(32, 32, 32, 0.9);
-    color: #f5f6fa;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .glassmorphic-header {
-        padding: 1rem;
-    }
-}
+    backdrop-filter
