@@ -3,59 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeNestHub Developer Console</title>
+    <title>🚀 CodeNestHub - Full-Stack Dev Platform</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header class="glassmorphic-header">
-        <h1>Welcome to CodeNestHub</h1>
+        <h1>🚀 CodeNestHub</h1>
         <nav>
             <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#integrations">Integrations</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#team">Team</a>
             <a href="#dashboard">Dashboard</a>
+            <div class="runtime-indicator">
+                <span class="runtime-python">Python 3.11</span>
+                <span class="runtime-go">Go 1.21</span>
+                <span class="runtime-ruby">Ruby 3.2</span>
+            </div>
         </nav>
     </header>
     
     <main class="container">
         <!-- Home Section -->
-        <section id="home">
-            <div class="hero-section">
-                <h2>🚀 Your Multi-Language Dev Hub</h2>
-                <p class="intro-text">
-                    Build, test, and deploy with our integrated environment supporting 
-                    Python, Go, Ruby, and JavaScript. Start coding immediately!
-                </p>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>📦 Backend Services</h3>
-                        <ul>
-                            <li>Python API Endpoints</li>
-                            <li>Go HTTP Server</li>
-                            <li>Ruby Microservices</li>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Build, Test, and Deploy</h2>
+                <p class="tagline">Unified environment for full-stack development across multiple languages</p>
+                
+                <div class="feature-grid">
+                    <article class="feature-card backend-card">
+                        <h3>📦 Core Services</h3>
+                        <ul class="service-list">
+                            <li data-runtime="python">
+                                <span class="service-name">Python API Endpoints</span>
+                                <span class="status-indicator active"></span>
+                            </li>
+                            <li data-runtime="go">
+                                <span class="service-name">Go HTTP Server</span>
+                                <span class="status-indicator active"></span>
+                            </li>
+                            <li data-runtime="ruby">
+                                <span class="service-name">Ruby Microservices</span>
+                                <span class="status-indicator active"></span>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="feature-card">
+                    </article>
+
+                    <article class="feature-card frontend-card">
                         <h3>✨ Frontend Features</h3>
-                        <ul>
-                            <li>Dynamic Theme Switching</li>
-                            <li>Real-Time Console</li>
-                            <li>Responsive Design</li>
+                        <ul class="feature-list">
+                            <li>Real-Time Collaboration</li>
+                            <li>CI/CD Integration</li>
+                            <li>Multi-Environment Support</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Console Output Section -->
-        <section id="console-output">
-            <h3>System Console</h3>
-            <div id="log-output">
-                <!-- Console messages will appear here -->
-            </div>
-        </section>
-    </main>
-
-    <!-- JavaScript Inclusion -->
-    <script src="scripts/app.js"></script>
-</body>
-</html>
+        <!-- Services Section -->
+        <section id="services" class="section-card">
+            <h2>🔧 Our Services</h2>
+            <p>We provide comprehensive full-stack development solutions including API development, microservices architecture, and real-time system monitoring. Our platform supports:</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>API Development</h3>
+                    <p>Build RESTful and GraphQL APIs with automatic documentation generation and testing tools.</p>
+                </div>
+                <div class="service-item">
+                    <h3>DevOps Automation</h3>
+                    <p>CI/CD pipelines with Docker support and Kubernetes orchestration for seamless deployments.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Real-Time Analytics</h3>
+                    <p>Monitor system performance with live dashboards and predictive analytics tools.</p>
+                </div>
 
