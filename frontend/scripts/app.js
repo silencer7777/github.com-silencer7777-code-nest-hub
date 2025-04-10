@@ -1,7 +1,8 @@
 class AppController {
     constructor() {
         this.initDynamicFeatures();
-        this.initHomeFeatures();  // Added feature initialization
+        this.initHomeFeatures();
+        this.initTheme();  // Added theme persistence
     }
 
     initDynamicFeatures() {
@@ -26,7 +27,15 @@ class AppController {
         });
     }
 
-    toggleTheme() {
+    initTheme() {
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+    }
+
+    toggleTheme = () => {  // Arrow function to maintain 'this' context
         document.body.classList.toggle('dark-theme');
         localStorage.setItem('theme', 
             document.body.classList.contains('dark-theme') ? 'dark' : 'light');
@@ -37,3 +46,4 @@ class AppController {
 document.addEventListener('DOMContentLoaded', () => {
     new AppController();
 });
+
