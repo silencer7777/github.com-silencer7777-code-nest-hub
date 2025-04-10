@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard - CodeNestHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="glassmorphic-header">
+        <h1>📊 CodeNestHub Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="workflow.html">Workflow</a>
+            <a href="integrations.html">Integrations</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="team.html">Team</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="content-section">
+            <h2>Project Analytics</h2>
+            <div class="dashboard-grid">
+                <div class="metric-card">
+                    <h3>API Health</h3>
+                    <div class="metric-value">98% Uptime</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Active Users</h3>
+                    <div class="metric-value">1,240</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Deployments</h3>
+                    <div class="metric-value">142 This Month</div>
+                </div>
+            </div>
+
+            <h3>Usage Trends</h3>
+            <div class="chart-container">
+                <canvas id="usageChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
