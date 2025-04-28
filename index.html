@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeNestHub - Home</title>
+    <title>CodeNestHub - Learn Full-Stack Development</title>
     <link rel="stylesheet" href="styles/main.css">
-</head>
+    <link rel="stylesheet" href="styles/homepage.css"> </head>
 <body>
     <header class="glassmorphic-header">
         <h1>🚀 CodeNestHub</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="courses.html">Courses</a> <a href="services.html">Services</a>
             <a href="workflow.html">Workflow</a>
             <a href="integrations.html">Integrations</a>
             <a href="testimonials.html">Testimonials</a>
@@ -20,14 +20,40 @@
             <a href="dashboard.html">Dashboard</a>
         </nav>
     </header>
-    
+
     <main class="container">
         <section class="hero-section">
-            <h2>Build, Test, and Deploy</h2>
-            <p>Unified environment for full-stack development</p>
+            <h2>Master Full-Stack Web Development: From Beginner to Advanced</h2>
+            <p>Your all-in-one platform to learn HTML, CSS, JavaScript, and backend technologies.</p>
             <div class="cta-buttons">
-                <a href="services.html" class="cta-button">Explore Services</a>
-                <a href="pricing.html" class="cta-button secondary">View Pricing</a>
+                <a href="courses.html?tier=free" class="cta-button primary">Start Learning for Free</a>
+                <a href="pricing.html" class="cta-button secondary">Explore Premium Features</a>
+            </div>
+        </section>
+
+        <section class="feature-highlights">
+            <h3>Why Choose CodeNestHub?</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="assets/interactive-lessons.svg" alt="Interactive Lessons">
+                    <h4>Interactive Lessons</h4>
+                    <p>Engaging content with code editors and real-time feedback.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/project-based-learning.svg" alt="Project-Based Learning">
+                    <h4>Project-Based Learning</h4>
+                    <p>Build real-world projects to solidify your understanding.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/community-support.svg" alt="Community Support">
+                    <h4>Community Support</h4>
+                    <p>Connect with fellow learners and get help when you need it.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/advanced-tools.svg" alt="Advanced Tools (Premium)">
+                    <h4>Advanced Tools (Premium)</h4>
+                    <p>Unlock exclusive features like personalized feedback and advanced IDEs.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -35,5 +61,3 @@
     <script src="scripts/app.js"></script>
 </body>
 </html>
-
-
