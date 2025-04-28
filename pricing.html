@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans - CodeNestHub</title>
     <link rel="stylesheet" href="styles/main.css">
-</head>
+    <link rel="stylesheet" href="styles/pricing.css"> </head>
 <body>
     <header class="glassmorphic-header">
         <h1>💵 CodeNestHub Pricing</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
             <a href="services.html">Services</a>
             <a href="workflow.html">Workflow</a>
             <a href="integrations.html">Integrations</a>
@@ -20,20 +21,85 @@
             <a href="dashboard.html">Dashboard</a>
         </nav>
     </header>
-    
+
     <main class="container">
         <section class="content-section">
-            <h2>Flexible Pricing Options</h2>
+            <h2>Choose the Plan That Fits Your Learning Goals</h2>
+            <p class="lead">Start with our free tier and unlock advanced features as you grow.</p>
+
             <div class="pricing-grid">
-                <div class="pricing-tier">
-                    <h3>Starter</h3>
-                    <p class="price">$99/mo</p>
+                <div class="pricing-tier free-tier">
+                    <h3>Free</h3>
+                    <p class="price">Free</p>
                     <ul>
-                        <li>3 Active Projects</li>
-                        <li>Basic Monitoring</li>
-                        <li>Community Support</li>
+                        <li>Access to introductory modules</li>
+                        <li>Community forum access</li>
+                        <li>Basic code editor</li>
                     </ul>
+                    <a href="courses.html?tier=free" class="cta-button">Get Started for Free</a>
                 </div>
-                <div class="pricing-tier">
-                    <h3>Pro</h3>
-                    <p class="price">$299
+
+                <div class="pricing-tier premium-tier">
+                    <h3>Premium</h3>
+                    <p class="price">$29/mo</p>
+                    <ul>
+                        <li>Access to all courses and advanced modules</li>
+                        <li>Priority support</li>
+                        <li>Advanced interactive IDE</li>
+                        <li>Personalized feedback on projects</li>
+                        <li>Exclusive workshops</li>
+                    </ul>
+                    <a href="#" class="cta-button primary">Upgrade to Premium</a>
+                </div>
+            </div>
+
+            <section class="feature-comparison">
+                <h3>Compare Plans</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Free</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>All Courses</td>
+                            <td><span class="icon-cross">❌</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                        <tr>
+                            <td>Advanced IDE</td>
+                            <td><span class="icon-cross">❌</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                        <tr>
+                            <td>Personalized Feedback</td>
+                            <td><span class="icon-cross">❌</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                        <tr>
+                            <td>Community Forum</td>
+                            <td><span class="icon-check">✔️</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                        <tr>
+                            <td>Priority Support</td>
+                            <td><span class="icon-cross">❌</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                        <tr>
+                            <td>Introductory Modules</td>
+                            <td><span class="icon-check">✔️</span></td>
+                            <td><span class="icon-check">✔️</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
