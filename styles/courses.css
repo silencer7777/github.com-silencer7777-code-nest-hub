@@ -1,0 +1,74 @@
+/* styles/courses.css */
+
+.courses-page .course-categories {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.courses-page .category-buttons button {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.courses-page .category-buttons button.active,
+.courses-page .category-buttons button:hover {
+    background-color: #64b5f6;
+    color: #fff;
+}
+
+.courses-page .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.courses-page .course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.courses-page .course-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.courses-page .course-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.courses-page .course-card .details-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.courses-page .course-card .details-link:hover {
+    background-color: #43a047;
+}
+
+.courses-page .course-card.premium {
+    border-left: 5px solid gold; /* Indicate premium courses */
+}
+
+.courses-page .course-card.premium .details-link {
+    background-color: #ff9800; /* Premium link color */
+}
+
+.courses-page .course-card.premium .details-link:hover {
+    background-color: #f57c00;
+}
