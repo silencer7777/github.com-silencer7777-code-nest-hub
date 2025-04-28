@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Courses - CodeNestHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/courses.css">
+</head>
+<body>
+    <header class="glassmorphic-header">
+        <h1>📚 Web Development Courses</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="services.html">Services</a>
+            <a href="workflow.html">Workflow</a>
+            <a href="integrations.html">Integrations</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="team.html">Team</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="container courses-page">
+        <section class="course-categories">
+            <h2>Explore Our Courses</h2>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Courses</button>
+                <button class="category-btn" data-category="beginner">Beginner</button>
+                <button class="category-btn" data-category="intermediate">Intermediate</button>
+                <button class="category-btn" data-category="advanced">Advanced</button>
+                <button class="category-btn" data-category="premium">Premium Tools</button>
+            </div>
+        </section>
+
+        <section class="course-list" id="course-list">
+            </section>
+    </main>
+
+    <script src="scripts/courses.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
